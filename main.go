@@ -6,6 +6,7 @@ import (
 	day3 "adventofcode/3"
 	day4 "adventofcode/4"
 	day5 "adventofcode/5"
+	day6 "adventofcode/6"
 	"fmt"
 	"os"
 	"reflect"
@@ -46,6 +47,9 @@ func main() {
 	}
 	if all || args[0] == "day5" {
 		runner(day5.Run)
+	}
+	if all || args[0] == "day6" {
+		runner(day6.Run)
 	}
 
 	fmt.Printf("\nTotal execution took: %dms\n", time.Since(start).Milliseconds())
